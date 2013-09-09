@@ -7,7 +7,7 @@
 PASSWORDS="/home/dean/Projects/mobilepasser/vagrant/files/passwords.txt"
 
 # Print out the first line.
-head -n 1 $PASSWORDS
+head -n 1 $PASSWORDS | tr -d '\r\n'
 
 # Remove the first line from the file.
 sed -i -e "1d" $PASSWORDS
