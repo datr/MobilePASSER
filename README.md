@@ -3,7 +3,9 @@ About
 
 MobilePasser is a virtual environment and set of scripts to quickly generate a
 large number of mobile pass passwords. These can be helpful if you're trying to
-automate an action which requires on mobile pass for authentication.
+automate an action which requires a mobile pass token for authentication. It
+also allows you to sync the password list between multiple devices so you're
+not tied to whatever device is running the mobile pass software.
 
 Warning
 -------
@@ -15,6 +17,8 @@ the way for no good reason.
 
 It's probably a good idea to keep the list in an encrypted file system that you
 can mount when you need access to it and keep unmounted the rest of the time.
+As long as you choose a secure password this is probably more secure than the
+four digit pin normally required to retrieve a OTP.
 
 Instructions
 ============
