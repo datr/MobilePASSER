@@ -65,3 +65,19 @@ to set this option on start up.
 
 The mobilepass application doesn't run well from a mounted directory so we
 should copy it to the desktop during startup.
+
+Alternative Approaches
+======================
+One idea might be to try and reimplement the generation algorithm so that we
+can hardcode the password. Unfortuantely MobilePass's implementation of
+HOTP HMAC-SHA256 is non-standard and there's no easy way to determine what
+they've changed without decompiling one of their clients (note to those who
+want to attempt this: the source code is also obfuscated.)
+
+A second option might be to use the MobilePass SDK to generate the passcodes
+[1]. Unfortunately, the SDK requires an "import token data file" as created by
+MobilePass Factory and finding a copy of that software appears difficult.
+
+Links
+=====
+[1] http://www.safenet-inc.com/support/safeword/premier-access-authentication-sdk.aspx
