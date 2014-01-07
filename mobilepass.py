@@ -1,8 +1,8 @@
-import hmac;
-import base64;
-import array;
-import binascii;
-import re;
+import hmac
+import base64
+import array
+import binascii
+import re
 from array import array
 
 import hashlib
@@ -52,23 +52,39 @@ def KDF1(hash, secret, iv, start_position, key_length): #key should be passed by
 		digest_counter += 1
 
 def validate_and_normalize(activation_code):
-	if activation_code == "":
-		return ""
+
+	if len(activation_code) == 0:
+		return activation_code
 
 	activation_code = activation_code.strip().upper()
 
-	if len(activation_code) == 0:
-		return ""
-
+	counter = 1
+	checksum = 0
 	normalized_code = ""
-	for c in activation_code:
-		if c == '0':
-			c = 'O';
-		if c == '1':
-			c = 'I'
 
-		if re.match("[A-Z2-7=]", c) is not None:
-			normalized_code += c
+	for character in activation_code:
+
+		if character == '0':
+			character = 'O'
+
+		if character == '1':
+			character = 'I'
+
+		if re.match("[A-Z2-7=]", character) is None:
+			continue;
+
+		if counter % 5 == 0:
+			# Process checksum digit.
+			if base32_lookup(character) != (checksum % 32):
+				return "Error"
+
+			checksum = 0;
+
+		else:
+			normalized_code += character
+			checksum += ord(character) * (counter % 5);
+
+		counter += 1
 
 	return normalized_code
 
@@ -81,43 +97,15 @@ def base32_lookup(character):
 	return base32_encoding[character]
 
 def get_entropy(activation_code):
-	
 	normalized_code = validate_and_normalize(activation_code)
-	print normalized_code
-
-	if normalized_code == "":
-		raise Exception("Invalid activation code provided.")
-
-	bits = ""
-
-	# We're only interested in the first 16 chracters as they encode the entity string.
-	for c in [ normalized_code[i:i+1] for i in range(0, 15) ]:
-		# Lookup the base32 value for each charachter, convert it to it's binary
-		# representation (padding it to 5 places where necessary) and append it on to
-		# the bits string.
-		base32_value = base32_lookup(c)
-		bits += "{0:05b}".format(base32_value)
-
-	print bits
-
-	# Split the string at every 8 bits to form bytes and convert them back into ints.
-	bytes = [ bits[i:i+8] for i in range(0, len(bits), 8) ]
-	bytes = [ int(x, 2) for x in bytes]
-
-	print bytes
-
-	# Finally create a bytesarray from the list of ints.
-	return bytearray(bytes)
+	return base64.b32decode(normalized_code)
 
 def get_key(entropy, policy):
 	secret = entropy
 
 	if len(policy) != 0:
 		policy_bytes = bytearray(policy, "ascii")
-		print binascii.hexlify(policy_bytes)
 		secret.extend(policy_bytes)
-
-	print binascii.hexlify(secret)
 
 	hash = hashlib.new('sha256')
 
@@ -134,22 +122,18 @@ def long_to_byte_array(long_num):
     return byte_array
 
 def truncated_value(h):
-    bytes = map(ord, h)
+    bytes = bytearray(h.decode("hex"))
     offset = bytes[-1] & 0xf
     v = (bytes[offset] & 0x7f) << 24 | (bytes[offset+1] & 0xff) << 16 | \
             (bytes[offset+2] & 0xff) << 8 | (bytes[offset+3] & 0xff)
     return v
 
 key = "QVKYC-FM6KO-SY6F7-TR22W"
-policy = "17840159"
+policy = ""
 
 entropy = get_entropy(key)
-key = get_key(entropy, policy) #<-- This line has been verified.
-
-print binascii.hexlify(key)
-
-#message = long_to_byte_array(0)
-message = "1"
+key = get_key(entropy, policy)
+message = long_to_byte_array(0)
 
 h = hmac.new(key, message, hashlib.sha256).hexdigest()
 h = truncated_value(h)
