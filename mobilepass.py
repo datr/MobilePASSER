@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import array
 import base64
 import hashlib
@@ -84,14 +85,15 @@ def truncated_value(h):
             (bytes[offset+2] & 0xff) << 8 | (bytes[offset+3] & 0xff)
     return v
 
-key = "QVKYC-FM6KO-SY6F7-TR22W"
-policy = ""
-message = long_to_byte_array(0)
+if __name__ == '__main__':
+        key = "QVKYC-FM6KO-SY6F7-TR22W"
+        policy = ""
+        message = long_to_byte_array(0)
 
-entropy = get_entropy(key)
-key = get_key(entropy, policy)
+        entropy = get_entropy(key)
+        key = get_key(entropy, policy)
 
-h = hmac.new(key, message, hashlib.sha256).hexdigest()
-h = truncated_value(h)
-h = h % (10**6)
-print '%0*d' % (6, h)   # 374844
+        h = hmac.new(key, message, hashlib.sha256).hexdigest()
+        h = truncated_value(h)
+        h = h % (10**6)
+        print '%0*d' % (6, h)   # 374844
