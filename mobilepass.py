@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+# coding=utf-8
 import array
 import base64
 import hashlib
 import hmac
+import sys
 
 # I ported the KDF1 algorithm from the bouncycastle library that shipped with
 # the app as the python libraries that included this function seemed to be
@@ -85,15 +87,27 @@ def truncated_value(h):
             (bytes[offset+2] & 0xff) << 8 | (bytes[offset+3] & 0xff)
     return v
 
-if __name__ == '__main__':
-        key = "QVKYC-FM6KO-SY6F7-TR22W"
-        policy = ""
-        message = long_to_byte_array(0)
+def generate_mobilepass_token(activation_key, index, policy=''):
+        '''
+        activation_key is the string the MobilePass client generated.
 
-        entropy = get_entropy(key)
+        index is a 0-based index of the token to generate. The first
+        generated token is for index=0, the second for index=1, and
+        so on. It is the caller’s responsibility to keep track of the
+        current index.
+        '''
+        message = long_to_byte_array(index)
+
+        entropy = get_entropy(activation_key)
         key = get_key(entropy, policy)
 
         h = hmac.new(key, message, hashlib.sha256).hexdigest()
         h = truncated_value(h)
         h = h % (10**6)
-        print '%0*d' % (6, h)   # 374844
+        return '%0*d' % (6, h)
+
+if __name__ == '__main__':
+        key = "QVKYC-FM6KO-SY6F7-TR22W"
+        policy = ""
+        index = 0
+        print generate_mobilepass_token(key, index, policy)   # 374844
