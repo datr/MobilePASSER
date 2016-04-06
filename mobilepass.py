@@ -6,6 +6,8 @@ import hashlib
 import hmac
 import sys
 
+from activationcode import ActivationCode
+
 # I ported the KDF1 algorithm from the bouncycastle library that shipped with
 # the app as the python libraries that included this function seemed to be
 # returning different values.
@@ -50,21 +52,12 @@ def KDF1(hash, secret, iv, start_position, key_length): #key should be passed by
 		counter += 1
 		digest_counter += 1
 
-def get_entropy(activation_code):
-	# Remove hyphens.
-	activation_code = activation_code.replace('-', '')
-	
-	# Remove every 5th chracter.
-	activation_code = ''.join('' if i % 5 == 0 else char for i, char in enumerate(activation_code, 1))
-
-	return base64.b32decode(activation_code, True, "I")
-
 def get_key(entropy, policy):
 	secret = entropy
 
 	if len(policy) != 0:
-		policy_bytes = bytearray(policy, "ascii")
-		secret.extend(policy_bytes)
+		policy_bytes = policy.encode('utf_8');
+		secret += policy_bytes
 
 	hash = hashlib.new('sha256')
 
@@ -98,7 +91,8 @@ def generate_mobilepass_token(activation_key, index, policy=''):
         '''
         message = long_to_byte_array(index)
 
-        entropy = get_entropy(activation_key)
+        code = ActivationCode(activation_key)
+        entropy = code.getEntropy().tobytes()
         key = get_key(entropy, policy)
 
         h = hmac.new(key, message, hashlib.sha256).hexdigest()
