@@ -1,17 +1,26 @@
 import hashlib
 
-import utils.base32
-import utils.base32checksum
-from activationpayloadv1 import ActivationPayloadV1
+import base32
+import base32_checksum
+from activation_payload_v1 import ActivationPayloadV1
+
+
+class InvalidActivationKey(Exception):
+	pass
+
+
+class MissingActivationKey(Exception):
+	pass
+
 
 class ActivationCode:
 
 	def __init__(self, code):
 		if len(code) == 0:
-			raise ValueError("Activation code is required")
+			raise MissingActivationKey("Activation key is required")
 
 		self.payloads = []
-		
+
 		if self.isValidLegacyActivationCode(code):
 			self.legacy = True
 			self.payloads.append(ActivationPayloadV1(self.entropy, 1))
@@ -20,25 +29,25 @@ class ActivationCode:
 			code = self.validateAndNormalize(code)
 
 			if not code:
-				raise ValueException("Invalid activation code")
+				raise InvalidActivationKey("Invalid activation key")
 
-			value = utils.base32.decode(code)
+			value = base32.decode(code)
 
 			if len(value) < 100:
-				raise ValueException("Invalid activation code")
+				raise InvalidActivationKey("Invalid activation key")
 
 			if not self.checkErrorDetection(value):
-				raise ValueException("Invalid activation code")
+				raise InvalidActivationKey("Invalid activation key")
 
 			bit_length = ActivationPayloadV1.getBitLength()
 			self.payloads.append(ActivationPayloadV1(value[0:bit_length]))
 
 
 	def isValidLegacyActivationCode(self, code):
-		normalized_code = utils.base32checksum.validateAndNormalize(code)
+		normalized_code = base32_checksum.validateAndNormalize(code)
 
 		if len(normalized_code) == 16:
-			self.entropy = utils.base32.decode(normalized_code)
+			self.entropy = base32.decode(normalized_code)
 
 			if (len(self.entropy) == 80):
 				return True
@@ -48,9 +57,9 @@ class ActivationCode:
 	def validateAndNormalize(self, code):
 		string = code.strip()
 		normalized_code = ""
-		
+
 		for character in string:
-			if utils.base32.isBase32Character(character):
+			if base32.isBase32Character(character):
 				normalized_code += character
 
 		return normalized_code
