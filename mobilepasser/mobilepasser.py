@@ -18,6 +18,8 @@ LENGTH = 6
 UPDATE = False
 
 parser = argparse.ArgumentParser(description='A reimplementation of the MobilePASS client in Python.')
+parser.add_argument('-c', '--config-file', type=str, default=CONFIG_FILE,
+                    help='Path to the configuration file.')
 parser.add_argument('-k', '--activation-key', type=str,
                     help='The string the MobilePass client generated.')
 parser.add_argument('-x', '--index', type=int,
@@ -44,7 +46,7 @@ def main():
     length = LENGTH
     update = UPDATE
 
-    Config.read(CONFIG_FILE)
+    Config.read(args.config_file)
     if Config.has_section('MobilePASS'):
         if Config.has_option('MobilePASS', 'activation_key'):
             key = Config.get('MobilePASS', 'activation_key')
