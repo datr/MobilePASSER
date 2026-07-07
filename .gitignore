@@ -1,1 +1,27 @@
+# Python
 *.pyc
+__pycache__/
+*.egg-info/
+build/
+dist/
+
+# Virtualenvs
+.venv/
+venv/
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Editor / OS junk
+.DS_Store
+.idea/
+.vscode/
+
+# Local secrets: do not commit these under any circumstances
+*.cfg.local
+.mobilepasser.cfg

@@ -1,0 +1,904 @@
+{
+  "activation_code_vectors": [
+    {
+      "entropy_hex": "855582b3ca963c59c75a", 
+      "entropy_length_bytes": 10, 
+      "input": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "kind": "legacy"
+    }, 
+    {
+      "input": "QVKYC-FM6KO-SY6F7-TR22X", 
+      "raises": "InvalidActivationKey"
+    }, 
+    {
+      "input": "", 
+      "raises": "MissingActivationKey"
+    }
+  ], 
+  "generated_by": "tests/_capture_golden_py2.py (Python 2)", 
+  "otp_vectors": [
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "374844", 
+      "index": 0, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "124927", 
+      "index": 1, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "048405", 
+      "index": 2, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "555522", 
+      "index": 3, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "888255", 
+      "index": 4, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "869881", 
+      "index": 5, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "033086", 
+      "index": 6, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "583054", 
+      "index": 7, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "898317", 
+      "index": 8, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "219544", 
+      "index": 9, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "690483", 
+      "index": 10, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "880233", 
+      "index": 11, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "771226", 
+      "index": 12, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "545569", 
+      "index": 13, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "662480", 
+      "index": 14, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "476777", 
+      "index": 15, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "856367", 
+      "index": 16, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "928853", 
+      "index": 17, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "547528", 
+      "index": 18, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "152098", 
+      "index": 19, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "494692", 
+      "index": 20, 
+      "otp_length": 6, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "33374844", 
+      "index": 0, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "62124927", 
+      "index": 1, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "93048405", 
+      "index": 2, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "84555522", 
+      "index": 3, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "47888255", 
+      "index": 4, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "15869881", 
+      "index": 5, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "91033086", 
+      "index": 6, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "48583054", 
+      "index": 7, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "42898317", 
+      "index": 8, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "12219544", 
+      "index": 9, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "71690483", 
+      "index": 10, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "05880233", 
+      "index": 11, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "19771226", 
+      "index": 12, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "63545569", 
+      "index": 13, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "70662480", 
+      "index": 14, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "99476777", 
+      "index": 15, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "46856367", 
+      "index": 16, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "72928853", 
+      "index": 17, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "17547528", 
+      "index": 18, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "19152098", 
+      "index": 19, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "13494692", 
+      "index": 20, 
+      "otp_length": 8, 
+      "policy": ""
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "322779", 
+      "index": 0, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "139718", 
+      "index": 1, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "858606", 
+      "index": 2, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "691987", 
+      "index": 3, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "428200", 
+      "index": 4, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "816396", 
+      "index": 5, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "980119", 
+      "index": 6, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "531460", 
+      "index": 7, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "123413", 
+      "index": 8, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "542864", 
+      "index": 9, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "260880", 
+      "index": 10, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "553767", 
+      "index": 11, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "211738", 
+      "index": 12, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "649428", 
+      "index": 13, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "993722", 
+      "index": 14, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "800536", 
+      "index": 15, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "034801", 
+      "index": 16, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "383465", 
+      "index": 17, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "900597", 
+      "index": 18, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "856082", 
+      "index": 19, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "287778", 
+      "index": 20, 
+      "otp_length": 6, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "02322779", 
+      "index": 0, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "81139718", 
+      "index": 1, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "61858606", 
+      "index": 2, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "87691987", 
+      "index": 3, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "77428200", 
+      "index": 4, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "65816396", 
+      "index": 5, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "97980119", 
+      "index": 6, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "79531460", 
+      "index": 7, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "95123413", 
+      "index": 8, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "91542864", 
+      "index": 9, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "19260880", 
+      "index": 10, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "48553767", 
+      "index": 11, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "05211738", 
+      "index": 12, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "14649428", 
+      "index": 13, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "30993722", 
+      "index": 14, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "80800536", 
+      "index": 15, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "74034801", 
+      "index": 16, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "63383465", 
+      "index": 17, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "46900597", 
+      "index": 18, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "70856082", 
+      "index": 19, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "90287778", 
+      "index": 20, 
+      "otp_length": 8, 
+      "policy": "some-policy"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "430759", 
+      "index": 0, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "819728", 
+      "index": 1, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "067060", 
+      "index": 2, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "403243", 
+      "index": 3, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "952040", 
+      "index": 4, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "377216", 
+      "index": 5, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "908118", 
+      "index": 6, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "323437", 
+      "index": 7, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "252520", 
+      "index": 8, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "139988", 
+      "index": 9, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "625736", 
+      "index": 10, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "018891", 
+      "index": 11, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "153719", 
+      "index": 12, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "333816", 
+      "index": 13, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "609559", 
+      "index": 14, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "243448", 
+      "index": 15, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "063841", 
+      "index": 16, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "509620", 
+      "index": 17, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "073252", 
+      "index": 18, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "678394", 
+      "index": 19, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "742870", 
+      "index": 20, 
+      "otp_length": 6, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "82430759", 
+      "index": 0, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "83819728", 
+      "index": 1, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "89067060", 
+      "index": 2, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "95403243", 
+      "index": 3, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "57952040", 
+      "index": 4, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "57377216", 
+      "index": 5, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "10908118", 
+      "index": 6, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "22323437", 
+      "index": 7, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "77252520", 
+      "index": 8, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "75139988", 
+      "index": 9, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "00625736", 
+      "index": 10, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "47018891", 
+      "index": 11, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "49153719", 
+      "index": 12, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "33333816", 
+      "index": 13, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "61609559", 
+      "index": 14, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "61243448", 
+      "index": 15, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "66063841", 
+      "index": 16, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "68509620", 
+      "index": 17, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "08073252", 
+      "index": 18, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "60678394", 
+      "index": 19, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }, 
+    {
+      "activation_key": "QVKYC-FM6KO-SY6F7-TR22W", 
+      "expected_token": "86742870", 
+      "index": 20, 
+      "otp_length": 8, 
+      "policy": "another/policy:123"
+    }
+  ], 
+  "python_version": "2.7.18 (default, Apr 21 2020, 09:53:40) \n[GCC 8.3.0]"
+}

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MobilePASSER"
+version = "2.0.0"
+description = "A reimplementation of the SafeNet MobilePASS HOTP client in modern Python."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [
+    { name = "Dean Reilly" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+]
+# No runtime dependencies; everything uses the Python 3 standard library.
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+]
+
+[project.scripts]
+mobilepasser = "mobilepasser.mobilepasser:main"
+
+[tool.setuptools.packages.find]
+include = ["mobilepasser*"]
+exclude = ["tests*", "examples*"]
