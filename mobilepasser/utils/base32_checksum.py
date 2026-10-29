@@ -1,4 +1,4 @@
-import base32
+from . import base32
 
 def validateAndNormalize(encoded_string):
 	if len(encoded_string.strip()) == 0:

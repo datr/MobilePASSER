@@ -1,8 +1,7 @@
 import hashlib
 
-import base32
-import base32_checksum
-from activation_payload_v1 import ActivationPayloadV1
+from . import base32, base32_checksum
+from .activation_payload_v1 import ActivationPayloadV1
 
 
 class InvalidActivationKey(Exception):
@@ -79,7 +78,7 @@ class ActivationCode:
 		hash = hashlib.new('sha256')
 		hash.update(value.tobytes())
 		digest = hash.digest()
-		return ord(digest[-1])
+		return digest[-1]
 
 	def getEntropy(self):
 		if self.legacy:

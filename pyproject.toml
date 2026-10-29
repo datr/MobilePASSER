@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobilepasser"
+version = "1.0.0"
+description = "A reimplementation of the MobilePASS client in Python."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bitstring>=4.3,<6",
+    "cryptography>=46",
+]
+
+[project.scripts]
+mobilepasser = "mobilepasser.mobilepasser:main"
+mobilepasser-import-android = "mobilepasser.android_import:main"
+
+[tool.setuptools.packages.find]
+include = ["mobilepasser*"]
